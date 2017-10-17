@@ -30,6 +30,55 @@ const BUTTON_TYPES = [
 	'link-delete',
 ];
 
+/**
+ * @example
+ * Sizes
+ *
+ * Large ButtonDefault ButtonSmall ButtonExtra Small Button
+ * <Button size="lg">Large Button</Button>
+ * <Button>Default Button</Button>
+ * <Button size="sm">Small Button</Button>
+ * <Button size="xs">Extra Small Button</Button>
+ * 
+ * Variants
+ * 
+ * FILL BUTTONS
+ * 
+ * PrimarySuccessWarningDanger
+ * <Button type="primary">Primary</Button>
+ * <Button type="success">Success</Button>
+ * <Button type="warning">Warning</Button>
+ * <Button type="danger">Danger</Button>
+ * 
+ * DEFAULT BUTTON ALTERNATIVES
+ * 
+ * Default PrimaryDefault SuccessDefault WarningDefault Danger
+ * <Button type="default-primary">Default Primary</Button>
+ * <Button type="default-success">Default Success</Button>
+ * <Button type="default-warning">Default Warning</Button>
+ * <Button type="default-danger">Default Danger</Button>
+ * 
+ * HOLLOW BUTTON ALTERNATIVES
+ * 
+ * Hollow PrimaryHollow SuccessHollow WarningHollow Danger
+ * <Button type="hollow-primary">Hollow Primary</Button>
+ * <Button type="hollow-success">Hollow Success</Button>
+ * <Button type="hollow-warning">Hollow Warning</Button>
+ * <Button type="hollow-danger">Hollow Danger</Button>
+ * 
+ * LINK STYLE BUTTONS
+ * 
+ * LinkLink TextLink PrimaryLink SuccessLink WarningLink DangerLink CancelLink Delete
+ * <Button type="link">Link</Button>
+ * <Button type="link-text">Link Text</Button>
+ * <Button type="link-primary">Link Primary</Button>
+ * <Button type="link-success">Link Success</Button>
+ * <Button type="link-warning">Link Warning</Button>
+ * <Button type="link-danger">Link Danger</Button>
+ * <Button type="link-cancel">Link Cancel</Button>
+ * <Button type="link-delete">Link Delete</Button>
+ */
+
 export default createReactClass({
 	displayName: 'Button',
 	propTypes: {

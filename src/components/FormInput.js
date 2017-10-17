@@ -3,6 +3,15 @@ const classNames = require('classnames');
 const PropTypes = require('prop-types');
 const createReactClass = require('create-react-class');
 
+/**
+ * @example
+ * 
+ * <FormInput placeholder="Input" />
+ * 
+ * <FormInput placeholder="Textarea" multiline />
+ *
+ */
+
 export default createReactClass({
 	displayName: 'FormInput',
 	propTypes: {

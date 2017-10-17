@@ -4,6 +4,13 @@ const React = require('react');
 const PropTypes = require('prop-types');
 const createReactClass = require('create-react-class');
 
+/**
+ * @example
+ * <FormField>
+ * 		<Checkbox label="Check it" />
+ * 	</FormField>
+ */ 
+
 const Checkbox = createReactClass({
 	propTypes: {
 		autoFocus: PropTypes.bool,

@@ -5,6 +5,17 @@ import PropTypes from 'prop-types';
 import icons from '../icons';
 import createReactClass from 'create-react-class';
 
+/**
+ * @example
+ * 
+ * <FormSelect options={[
+ * 	{ label: 'Caramel',    value: 'caramel' },
+ * 	{ label: 'Chocolate',  value: 'chocolate' },
+ * 	{ label: 'Strawberry', value: 'strawberry' },
+ * 	{ label: 'Vanilla',    value: 'vanilla', disabled: true }
+ * ]} firstOption="Select" onChange={this.handleSelect} />
+ */
+
 export default createReactClass({
 	displayName: 'FormSelect',
 	propTypes: {

@@ -39,6 +39,21 @@ function range (props) {
 	}
 }
 
+/**
+ * @example
+ * 
+ * <Pagination
+ *
+ * 	currentPage={this.state.currentPage}
+ * 	onPageSelect={this.handlePageSelect}
+ * 	pageSize={this.state.pageSize}
+ * 	plural={this.state.plural}
+ * 	singular={this.state.singular}
+ * 	total={this.state.total}
+ * 	limit={this.state.limit}
+ * 	/>
+ */
+
 export default createReactClass({
 	displayName: 'Pagination',
 	propTypes: {

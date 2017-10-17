@@ -19,6 +19,15 @@ const ALERT_TYPES = [
 	'warning-inverted',
 ];
 
+/**
+ * @example
+ * <Pill label="Create" type="success-inverted" />
+ * <Pill label="First Pill" type="primary" onClear={this.handleClear} />
+ * <Pill label="Second Pill" type="primary" onClear={this.handleClear} />
+ * <Pill label="Third Pill" type="primary" onClear={this.handleClear} />
+ * <Pill label="Clear All" />
+ */
+
 export default createReactClass({
 	displayName: 'Pill',
 	propTypes: {

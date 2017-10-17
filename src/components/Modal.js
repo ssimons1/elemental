@@ -8,6 +8,36 @@ import createReactClass from 'create-react-class';
 
 import { canUseDOM } from '../constants';
 
+/**
+ * @example
+ * 
+ * <Modal>
+ * 	<ModalHeader text="Modal Header" />
+ * 	<ModalBody>
+ * 		<form>[...]</form>
+ * 	</ModalBody>
+ * 	<ModalFooter>
+ * 		<Button type="primary">Modal Footer</Button>
+ * 		<Button type="link-cancel">Button</Button>
+ * 	</ModalFooter>
+ * </Modal>
+ * 
+ * <Button onClick={this.toggleModal}>Launch Modal</Button>
+ * <Modal isOpen={this.state.modalIsOpen} onCancel={this.toggleModal} backdropClosesModal>
+ * 	<ModalHeader text="Lots of text to show scroll behavior" showCloseButton onClose={this.toggleModal} />
+ * 	<ModalBody>[...]</ModalBody>
+ * 	<ModalFooter>
+ * 		<Button type="primary" onClick={this.toggleModal}>Close modal</Button>
+ * 		<Button type="link-cancel" onClick={this.toggleModal}>Also closes modal</Button>
+ * 	</ModalFooter>
+ * </Modal>
+ * 
+ * Sizes
+ * <Modal ... width="small">...</Modal>
+ * <Modal ... width="large">...</Modal>
+ * <Modal ... width={768}>...</Modal>
+ */
+
 const TransitionPortal = createReactClass({
 	displayName: 'TransitionPortal',
 	componentDidMount () {

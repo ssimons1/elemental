@@ -12,6 +12,14 @@ const ALERT_TYPES = [
 	'warning',
 ];
 
+/**
+ * @example
+ * <Alert type="info"><strong>Info:</strong> Alerts can contain <a href="/misc">Anchor Tags</a></Alert>
+ * <Alert type="success"><strong>Success:</strong> Nothing to worry about, everything is going great!</Alert>
+ * <Alert type="warning"><strong>Warning:</strong> Pay attention to me, things are not going according to plan.</Alert>
+ * <Alert type="danger"><strong>Error:</strong> You need to take action, something has gone terribly wrong!</Alert>
+ */
+
 export default createReactClass({
 	displayName: 'ElementalAlert',
 	propTypes: {

@@ -11,6 +11,14 @@ const ICON_MAP = require('../Octicons').map;
 const ICON_KEYS = require('../Octicons').keys;
 const COLOR_VARIANTS = ['danger', 'default', 'primary', 'success', 'warning'];
 
+/**
+ * @example
+ * 
+ * <FormIconField iconPosition="right" iconKey="search" iconColor="default" iconIsLoading={this.state.searching}>
+ * 	<FormInput onChange={this.handleSearch} type="search" placeholder="Search..." name="icon-form-search" />
+ * </FormIconField>
+ */
+
 export default createReactClass({
 	displayName: 'FormIconField',
 	propTypes: {

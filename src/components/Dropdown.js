@@ -9,6 +9,17 @@ const createReactClass = require('create-react-class');
 const ESC_KEYCODE = 27;
 const NO_OP = () => undefined;
 
+/**
+ * @example
+ * 
+ * <Dropdown items={[...]} buttonLabel="Default Trigger" />
+ * 
+ * I am an H3!
+ * <Dropdown items={[...]}>
+ * 	<h3>I am an H3!</h3>
+ * </Dropdown>
+ */
+
 export default createReactClass({
 	displayName: 'Dropdown',
 	propTypes: {

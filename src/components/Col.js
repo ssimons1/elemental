@@ -4,6 +4,95 @@ import E from '../constants';
 import PropTypes from 'prop-types';
 import createReactClass from 'create-react-class';
 
+/**
+ * @example
+ * EQUAL COLUMNS
+ * <Row>
+ * 	<Col sm="1/3">
+ * 		<DemoBox>One Third</DemoBox>
+ * 	</Col>
+ * 	<Col sm="1/3">
+ * 		<DemoBox>One Third</DemoBox>
+ * 	</Col>
+ * 	<Col sm="1/3">
+ * 		<DemoBox>One Third</DemoBox>
+ * 	</Col>
+ * </Row>
+ * 
+ * UNEQUAL COLUMNS
+ * <Row>
+ * 	<Col sm="1/4">
+ * 		<DemoBox>One Quarter</DemoBox>
+ * 	</Col>
+ * 	<Col sm="1/2">
+ * 		<DemoBox>One Half</DemoBox>
+ * 	</Col>
+ * 	<Col sm="1/4">
+ * 		<DemoBox>One Quarter</DemoBox>
+ * 	</Col>
+ * 	<Col sm="2/3">
+ * 		<DemoBox>Two Thirds</DemoBox>
+ * 	</Col>
+ * 	<Col sm="1/3">
+ * 		<DemoBox>One Third</DemoBox>
+ * 	</Col>
+ * </Row>
+ * 
+ * COLUMNS ON A SMALL DEVICE
+ * <Row>
+ * 	<Col xs="33%" sm="25%" lg="33.333%">
+ * 		<DemoBox>
+ * 			<ResponsiveText visibleXS="⅓" visibleSM="One Quarter" visibleMD="One Quarter" visibleLG="One Third" />
+ * 		</DemoBox>
+ * 	</Col>
+ * 	<Col xs="33%" sm="50%" lg="33.333%">
+ * 		<DemoBox>
+ * 			<ResponsiveText visibleXS="⅓" visibleSM="One Half" visibleMD="One Half" visibleLG="One Third" />
+ * 		</DemoBox>
+ * 	</Col>
+ * 	<Col xs="33%" sm="25%" lg="33.333%">
+ * 		<DemoBox>
+ * 			<ResponsiveText visibleXS="⅓" visibleSM="One Quarter" visibleMD="One Quarter" visibleLG="One Third" />
+ * 		</DemoBox>
+ * 	</Col>
+ * 	<Col xs="50%" sm="33.333%" md="66.667%" lg="20%">
+ * 		<DemoBox>
+ * 			<ResponsiveText visibleXS="½" visibleSM="One Third" visibleMD="Two Thirds" visibleLG="One Fifth" />
+ * 		</DemoBox>
+ * 	</Col>
+ * 	<Col xs="50%" sm="66.667%" md="33.333%" lg="60%">
+ * 		<DemoBox>
+ * 			<ResponsiveText visibleXS="½" visibleSM="Two Thirds" visibleMD="One Third" visibleLG="Three Fifths" />
+ * 		</DemoBox>
+ * 	</Col>
+ * 	<Col xs="100%" sm="33.333%" md="25%" lg="20%">
+ * 		<DemoBox>
+ * 			<ResponsiveText visibleXS="1" visibleSM="One Third" visibleMD="One Quarter" visibleLG="One Fifth" />
+ * 		</DemoBox>
+ * 	</Col>
+ * 	<Col xs="50%" sm="33.333%" md="50%" lg="50%">
+ * 		<DemoBox>
+ * 			<ResponsiveText visibleXS="½" visibleSM="One Third" visibleMD="One Half" visibleLG="One Half" />
+ * 		</DemoBox>
+ * 	</Col>
+ * 	<Col xs="50%" sm="33.333%" md="25%" lg="50%">
+ * 		<DemoBox>
+ * 			<ResponsiveText visibleXS="½" visibleSM="One Third" visibleMD="One Quarter" visibleLG="One Half" />
+ * 		</DemoBox>
+ * 	</Col>
+ * </Row>
+ * 
+ * COLUMNS WITH A BASIS
+ * <Row>
+ * 	<Col basis="25%"><DemoBox>♥</DemoBox></Col>
+ * 	<Col basis="25%"><DemoBox>♥</DemoBox></Col>
+ * 	<Col basis="25%"><DemoBox>♥</DemoBox></Col>
+ * 	<Col basis="25%"><DemoBox>♥</DemoBox></Col>
+ * 	<Col basis="25%"><DemoBox>♥</DemoBox></Col>
+ * 	<Col basis="25%"><DemoBox>♥</DemoBox></Col>
+ * </Row>
+ */
+
 export default createReactClass({
 	displayName: 'Col',
 	propTypes: {
