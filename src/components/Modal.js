@@ -9,6 +9,7 @@ import createReactClass from 'create-react-class';
 import { canUseDOM } from '../constants';
 
 /**
+ * @description Modal component
  * @example
  * 
  * <Modal>
@@ -63,10 +64,22 @@ const Modal = createReactClass({
 	displayName: 'Modal',
 	propTypes: {
 		autoFocusFirstElement: PropTypes.bool,
+		/**
+		 * @property {PropTypes.bool} backdropClosesModal - Pass through to make the backdrop available as a target to dismiss the modal.
+		 */
 		backdropClosesModal: PropTypes.bool,
 		className: PropTypes.string,
+		/**
+		 * @property {PropTypes.bool} isOpen - Managed by state; this is how to control the visibility of the modal.
+		 */
 		isOpen: PropTypes.bool,
+		/**
+		 * @property {PropTypes.func} onCancel - The function used to handle cancel events on the modal; typically sets the open state to false.
+		 */
 		onCancel: PropTypes.func,
+		/**
+		 * @property {PropTypes.number|PropTypes.enum} width - Explicitly set a numeric width or provide one of three sizes; 'small', 'medium', 'large' - 320px, 640px, 960px respectively.
+		 */
 		width: PropTypes.oneOfType([
 			PropTypes.oneOf(['small', 'medium', 'large']),
 			PropTypes.number,

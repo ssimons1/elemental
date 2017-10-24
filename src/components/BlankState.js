@@ -2,6 +2,10 @@ const React = require('react');
 const PropTypes = require('prop-types');
 const createReactClass = require('create-react-class');
 
+/**
+ * @description BlankSlate component
+ */
+
 const BlankSlate = createReactClass({
 	displayName: 'BlankState',
 	propTypes: {

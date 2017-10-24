@@ -4,6 +4,10 @@ const blacklist = require('blacklist');
 const PropTypes = require('prop-types');
 const createReactClass = require('create-react-class');
 
+/**
+ * @description InputGroupSection component
+ */
+
 export default createReactClass({
 	displayName: 'InputGroupSection',
 	propTypes: {

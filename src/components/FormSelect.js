@@ -6,6 +6,7 @@ import icons from '../icons';
 import createReactClass from 'create-react-class';
 
 /**
+ * @description FormSelect component
  * @example
  * 
  * <FormSelect options={[

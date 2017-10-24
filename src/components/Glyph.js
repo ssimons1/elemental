@@ -7,6 +7,7 @@ const icons = require('../Octicons').map;
 const validNames = require('../Octicons').keys;
 
 /**
+ * @description Glyph component
  * @example
  * 
  * Basic example
@@ -31,7 +32,13 @@ const Glyph = createReactClass({
 	displayName: 'Glyph',
 	propTypes: {
 		className: PropTypes.string,
+		/**
+		 * @property {PropTypes.string} icon - Required. Icon name from Octicons.
+		 */
 		icon: PropTypes.oneOf(validNames),
+		/**
+		 * @property {PropTypes.enum} type - One of: danger default muted primary success warning.
+		 */
 		type: PropTypes.oneOf([
 			'danger',
 			'default',

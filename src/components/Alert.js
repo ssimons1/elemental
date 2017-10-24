@@ -13,6 +13,7 @@ const ALERT_TYPES = [
 ];
 
 /**
+ * @description Alert component
  * @example
  * <Alert type="info"><strong>Info:</strong> Alerts can contain <a href="/misc">Anchor Tags</a></Alert>
  * <Alert type="success"><strong>Success:</strong> Nothing to worry about, everything is going great!</Alert>
@@ -23,8 +24,14 @@ const ALERT_TYPES = [
 export default createReactClass({
 	displayName: 'ElementalAlert',
 	propTypes: {
+		/**
+		 * @property {PropTypes.node} children - Required.
+		 */
 		children: PropTypes.node.isRequired,
 		className: PropTypes.string,
+		/**
+		 * @property {PropTypes.enum} type - Required. One of: danger info primary success warning.
+		 */
 		type: PropTypes.oneOf(ALERT_TYPES).isRequired,
 	},
 	render () {

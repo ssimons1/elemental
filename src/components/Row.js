@@ -5,6 +5,10 @@ import classnames from 'classnames';
 import createReactClass from 'create-react-class';
 import E from '../constants';
 
+/**
+ * @description Row component
+ */
+
 export default createReactClass({
 	displayName: 'Row',
 	propTypes: {

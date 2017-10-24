@@ -2,6 +2,10 @@ import React from 'react';
 import theme from '../constants';
 import PropTypes from 'prop-types';
 
+/**
+ * @description Container component
+ */
+
 function Container ({ children, clearfix, gutter, maxWidth, style, ...props }) {
 	const styles = {
 		clearfix: {

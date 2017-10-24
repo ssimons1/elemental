@@ -40,6 +40,7 @@ function range (props) {
 }
 
 /**
+ * @description Pagination component
  * @example
  * 
  * <Pagination
@@ -58,14 +59,35 @@ export default createReactClass({
 	displayName: 'Pagination',
 	propTypes: {
 		className: PropTypes.string,
+		/**
+		 * @property {PropTypes.number} currentPage - The current page number.
+		 */
 		currentPage: PropTypes.number.isRequired,
 		label: PropTypes.func,
+		/**
+		 * @property {PropTypes.func} limit - The number of pages to show in pagination.
+		 */
 		limit: PropTypes.number,
+		/**
+		 * @property {PropTypes.number} onPageSelect - How you want to handle page selection by the user.
+		 */
 		onPageSelect: PropTypes.func,
+		/**
+		 * @property {PropTypes.string} pageSize - The number of records to display per page.
+		 */
 		pageSize: PropTypes.number.isRequired,
+		/**
+		 * @property {PropTypes.string} plural - Displayed when there are no records "No Items", or the total number of records is less than the records per page "Showing 10 Items".
+		 */
 		plural: PropTypes.string,
+		/**
+		 * @property {PropTypes.number} singular - Displayed when there is a single record "Showing 1 Item".
+		 */
 		singular: PropTypes.string,
 		style: PropTypes.object,
+		/**
+		 * @property {PropTypes.number} total - The total number of records.
+		 */
 		total: PropTypes.number.isRequired,
 	},
 	renderCount () {

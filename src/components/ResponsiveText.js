@@ -4,6 +4,10 @@ import blacklist from 'blacklist';
 import createReactClass from 'create-react-class';
 import E from '../constants';
 
+/**
+ * @description ResponsiveText component
+ */
+
 export default createReactClass({
 	displayName: 'ResponsiveText',
 	propTypes: {

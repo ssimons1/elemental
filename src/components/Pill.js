@@ -20,6 +20,7 @@ const ALERT_TYPES = [
 ];
 
 /**
+ * @description Pill component
  * @example
  * <Pill label="Create" type="success-inverted" />
  * <Pill label="First Pill" type="primary" onClear={this.handleClear} />
@@ -32,9 +33,18 @@ export default createReactClass({
 	displayName: 'Pill',
 	propTypes: {
 		className: PropTypes.string,
+		/**
+		 * @property {PropTypes.string} label - Required. The tag label.
+		 */
 		label: PropTypes.string.isRequired,
+		/**
+		 * @property {PropTypes.func} onClear - Handle clear events on the pill. The clear button is rendered when this is supplied.
+		 */
 		onClear: PropTypes.func,
 		onClick: PropTypes.func,
+		/**
+		 * @property {PropTypes.enum} type - One of: danger default info primary success warning danger-inverted default-inverted info-inverted primary-inverted success-inverted warning-inverted.
+		 */
 		type: PropTypes.oneOf(ALERT_TYPES),
 	},
 	getDefaultProps () {

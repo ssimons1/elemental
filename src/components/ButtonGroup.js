@@ -4,6 +4,7 @@ const PropTypes = require('prop-types');
 const createReactClass = require('create-react-class');
 
 /**
+ * @description ButtonGroup component
  * @example
  * 
  * <ButtonGroup>
@@ -16,6 +17,9 @@ const createReactClass = require('create-react-class');
 export default createReactClass({
 	displayName: 'ButtonGroup',
 	propTypes: {
+		/**
+		 * @property {PropTypes.node} children - Required. Must use Elemental <Button /> components for correct styling.
+		 */
 		children: PropTypes.node.isRequired,
 		className: PropTypes.string,
 	},

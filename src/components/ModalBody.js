@@ -3,6 +3,10 @@ const React = require('react');
 const PropTypes = require('prop-types');
 const createReactClass = require('create-react-class');
 
+/**
+ * @description ModalBody component
+ */
+
 export default createReactClass({
 	displayName: 'ModalBody',
 	propTypes: {

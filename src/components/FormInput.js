@@ -4,6 +4,7 @@ const PropTypes = require('prop-types');
 const createReactClass = require('create-react-class');
 
 /**
+ * @description FormInput component
  * @example
  * 
  * <FormInput placeholder="Input" />

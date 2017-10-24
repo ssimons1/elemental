@@ -4,13 +4,29 @@ const blacklist = require('blacklist');
 const PropTypes = require('prop-types');
 const createReactClass = require('create-react-class');
 
+/**
+ * @description ModalHeader component
+ */
+
 export default createReactClass({
 	displayName: 'ModalHeader',
 	propTypes: {
+		/**
+		 * @property {PropTypes.node} children - Alternative to using the text attribute, for when you need more control over the content.
+		 */
 		children: PropTypes.node,
 		className: PropTypes.string,
+		/**
+		 * @property {PropTypes.bool} onClose - What to do when the user clicks the close button.
+		 */
 		onClose: PropTypes.func,
+		/**
+		 * @property {PropTypes.func} showCloseButton - Allow users to dismiss the modal.
+		 */
 		showCloseButton: PropTypes.bool,
+		/**
+		 * @property {PropTypes.string} text - Creates a title for the modal. We use "text" because title is reserved.
+		 */
 		text: PropTypes.string,
 	},
 	handleClose () {

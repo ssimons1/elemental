@@ -31,6 +31,7 @@ const BUTTON_TYPES = [
 ];
 
 /**
+ * @description Button component
  * @example
  * Sizes
  *
@@ -82,13 +83,31 @@ const BUTTON_TYPES = [
 export default createReactClass({
 	displayName: 'Button',
 	propTypes: {
+		/**
+		 * @property {PropTypes.bool} block - Turns the button into a block-level element which will fill the width of its container.
+		 */
 		block: PropTypes.bool,
 		className: PropTypes.string,
+		/**
+		 * @property {PropTypes.element} component - When provided, <Button> will render the passed in component with the proper styles instead of creating its own. This is useful when integrating with React Router's <Link> or using your own custom component.
+		 */
 		component: PropTypes.element,
+		/**
+		 * @property {PropTypes.string} href - When provided the component will render as an <a> instead of <button>.
+		 */
 		href: PropTypes.string,
 		isActive: PropTypes.bool,
+		/**
+		 * @property {PropTypes.enum} size - Size of the button - one of: lg sm xs.
+		 */
 		size: PropTypes.oneOf(BUTTON_SIZES),
+		/**
+		 * @property {PropTypes.bool} submit - Applies the submit attribute to the button for use in forms.
+		 */
 		submit: PropTypes.bool,
+		/**
+		 * @property {PropTypes.enum} type - One of: default default-primary default-success default-warning default-danger primary success warning danger link link-text link-cancel link-delete.
+		 */
 		type: PropTypes.oneOf(BUTTON_TYPES),
 	},
 	getDefaultProps () {

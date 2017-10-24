@@ -2,6 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 
+/**
+ * @description SegmentedControl component
+ */
+
 function SegmentedControl ({
 	className,
 	equalWidthSegments,

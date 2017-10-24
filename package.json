@@ -12,7 +12,8 @@
   "dependencies": {
     "blacklist": "^1.1.4",
     "classnames": "^2.2.5",
-    "create-react-class": "^15.6.2"
+    "create-react-class": "^15.6.2",
+    "prop-types": "^15.6.0"
   },
   "devDependencies": {
     "babel": "^5.8.23",

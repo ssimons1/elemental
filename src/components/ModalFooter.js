@@ -3,6 +3,10 @@ const React = require('react');
 const PropTypes = require('prop-types');
 const createReactClass = require('create-react-class');
 
+/**
+ * @description ModalFooter component
+ */
+
 export default createReactClass({
 	displayName: 'ModalFooter',
 	propTypes: {

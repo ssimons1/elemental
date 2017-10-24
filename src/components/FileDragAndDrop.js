@@ -6,6 +6,9 @@ const createReactClass = require('create-react-class');
 /*
 	Based on: https://github.com/paramaggarwal/react-dropzone
 */
+/**
+ * @description FileDragAndDrop component
+ */
 
 var Dropzone = createReactClass({
 	propTypes: {

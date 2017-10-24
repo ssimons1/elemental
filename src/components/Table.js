@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import createReactClass from 'create-react-class';
 
 /**
+ * @description Table component
  * @example
  * 
  * <Table>

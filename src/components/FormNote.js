@@ -12,6 +12,10 @@ const NOTE_TYPES = [
 	'danger',
 ];
 
+/**
+ * @description FormNote component
+ */
+
 export default createReactClass({
 	displayName: 'FormNote',
 	propTypes: {

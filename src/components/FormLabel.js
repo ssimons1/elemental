@@ -4,6 +4,10 @@ const classNames = require('classnames');
 const PropTypes = require('prop-types');
 const createReactClass = require('create-react-class');
 
+/**
+ * @description FormLabel component
+ */
+
 export default createReactClass({
 	displayName: 'FormLabel',
 	propTypes: {

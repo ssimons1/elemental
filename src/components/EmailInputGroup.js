@@ -9,6 +9,10 @@ function validateEmail (value) {
 	return REGEXP_EMAIL.test(value);
 }
 
+/**
+ * @description EmailInputGroup component
+ */
+
 export default createReactClass({
 	displayName: 'EmailInputGroup',
 	propTypes: {

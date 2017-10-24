@@ -6,6 +6,10 @@ const createReactClass = require('create-react-class');
 var Button = require('./Button');
 var Spinner = require('./Spinner');
 
+/**
+ * @description FileUpload component
+ */
+
 export default createReactClass({
 	displayName: 'FileUpload',
 	propTypes: {

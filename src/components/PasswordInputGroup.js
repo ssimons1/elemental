@@ -7,6 +7,10 @@ function validatePassword (value) {
 	return value.length >= 8;
 }
 
+/**
+ * @description PasswordInputGroup component
+ */
+
 export default createReactClass({
 	displayName: 'PasswordInputGroup',
 	propTypes: {

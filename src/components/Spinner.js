@@ -4,6 +4,7 @@ const PropTypes = require('prop-types');
 const createReactClass = require('create-react-class');
 
 /**
+ * @description Spinner component
  * @example
  * <Spinner size="md" />s
  * <Spinner size="md" type="primary" />
@@ -22,7 +23,13 @@ export default createReactClass({
 	displayName: 'Spinner',
 	propTypes: {
 		className: PropTypes.string,
+		/**
+		 * @property {PropTypes.enum} size - Declare the size of the dots in the spinner. Possible options: sm md lg. Spinners automatically become small when inside of buttons.
+		 */
 		size: PropTypes.oneOf(['sm', 'md', 'lg']),
+		/**
+		 * @property {PropTypes.enum} type - Declare the colour of the dots in the spinner. Possible options: default primary inverted.
+		 */
 		type: PropTypes.oneOf(['default', 'primary', 'inverted']),
 	},
 	getDefaultProps () {

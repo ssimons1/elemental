@@ -12,6 +12,7 @@ const ICON_KEYS = require('../Octicons').keys;
 const COLOR_VARIANTS = ['danger', 'default', 'primary', 'success', 'warning'];
 
 /**
+ * @description FormIconField component
  * @example
  * 
  * <FormIconField iconPosition="right" iconKey="search" iconColor="default" iconIsLoading={this.state.searching}>

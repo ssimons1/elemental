@@ -10,6 +10,7 @@ const ESC_KEYCODE = 27;
 const NO_OP = () => undefined;
 
 /**
+ * @description Dropdown component
  * @example
  * 
  * <Dropdown items={[...]} buttonLabel="Default Trigger" />
@@ -23,15 +24,39 @@ const NO_OP = () => undefined;
 export default createReactClass({
 	displayName: 'Dropdown',
 	propTypes: {
+		/**
+		 * @property {PropTypes.bool} alignRight - The dropdown menu is aligned left by default, apply this attribute to right align the dropdown menu.
+		 */
 		alignRight: PropTypes.bool,
+		/**
+		 * @property {PropTypes.bool} buttonHasDisclosureArrow - Display a disclosure arrow along with the label of the button. Ignore if a custom trigger is employed.
+		 */
 		buttonHasDisclosureArrow: PropTypes.bool,
+		/**
+		 * @property {PropTypes.string} buttonLabel - Whatever action the button represents.
+		 */
 		buttonLabel: PropTypes.string,
 		buttonSize: PropTypes.string,
+		/**
+		 * @property {PropTypes.enum} buttonType - See above section on button types.
+		 */
 		buttonType: PropTypes.string,
+		/**
+		 * @property {PropTypes.element} children - A single child, cloned and used as the dropdown's trigger element.
+		 */
 		children: PropTypes.element,
 		className: PropTypes.string,
+		/**
+		 * @property {PropTypes.bool} isOpen - The dropdown menu is controlled by user input. Use this if you need to manually toggle the open state of the dropdown menu.
+		 */
 		isOpen: PropTypes.bool,
+		/**
+		 * @property {PropTypes.array} items - The list of items to display in the menu formatted.
+		 */
 		items: PropTypes.array.isRequired,
+		/**
+		 * @property {PropTypes.func} onSelect - The function that is called on each menu item when clicked.
+		 */
 		onSelect: PropTypes.func,
 	},
 	getDefaultProps () {

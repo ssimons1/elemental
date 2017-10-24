@@ -6,6 +6,10 @@ const createReactClass = require('create-react-class');
 
 const icons = require('../Octicons').map;
 
+/**
+ * @description FormIcon component
+ */
+
 export default createReactClass({
 	displayName: 'FormIcon',
 	propTypes: {

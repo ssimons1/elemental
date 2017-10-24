@@ -5,6 +5,7 @@ const PropTypes = require('prop-types');
 const createReactClass = require('create-react-class');
 
 /**
+ * @description FormField component
  * @example
  * 
  * <FormField label="Input" htmlFor="supported-controls-input">
@@ -64,8 +65,17 @@ export default createReactClass({
 		className: PropTypes.string,
 		htmlFor: PropTypes.string,
 		id: PropTypes.string,
+		/**
+		 * @property {PropTypes.string} label
+		 */
 		label: PropTypes.string,
+		/**
+		 * @property {PropTypes.bool} offsetAbsentLabel
+		 */
 		offsetAbsentLabel: PropTypes.bool,
+		/**
+		 * @property {PropTypes.string} width - Declare a width for your field; must be used inside a <FormRow> component. Possible options: one-half two-quarters three-sixths one-quarter three-quarters one-third two-sixths two-thirds four-sixths one-fifth two-fifths three-fifths four-fifths one-sixth five-sixths.
+		 */
 		width: PropTypes.oneOf([
 			'one-half',
 			'two-quarters',

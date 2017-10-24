@@ -5,6 +5,7 @@ const PropTypes = require('prop-types');
 const createReactClass = require('create-react-class');
 
 /**
+ * @description InputGroup component
  * @example
  * CONTIGUOUS FORM ELEMENTS
 

@@ -4,6 +4,10 @@ const React = require('react');
 const PropTypes = require('prop-types');
 const createReactClass = require('create-react-class');
 
+/**
+ * @description Radio component
+ */
+
 var Radio = createReactClass({
 	propTypes: {
 		className: PropTypes.string,

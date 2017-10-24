@@ -4,6 +4,10 @@ const classNames = require('classnames');
 const PropTypes = require('prop-types');
 const createReactClass = require('create-react-class');
 
+/**
+ * @description RadioGroup component
+ */
+
 export default createReactClass({
 	displayName: 'RadioGroup',
 	propTypes: {

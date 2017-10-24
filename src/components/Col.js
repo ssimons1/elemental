@@ -5,6 +5,7 @@ import PropTypes from 'prop-types';
 import createReactClass from 'create-react-class';
 
 /**
+ * @description Col component
  * @example
  * EQUAL COLUMNS
  * <Row>
